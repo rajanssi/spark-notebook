@@ -11,10 +11,11 @@ Apache Spark and Jupyter Notebooks on Openshift. Runs newest version of `jupyter
 
 ## Using the tempate with Rahti2
 
-After succesfull deployment, you can open Jupyter Notebook frontend web page at 
+After succesfull deployment, you can open Jupyter server frontend web page at 
 
 `http://www.pyspark-route-<your-project-name>.2.rahtiapp.fi`.
 
+To get the access token to Jupyter server, you can first use the command `oc get pods` to find the right pod name and then type `oc logs -f <pod-name>`. You'll find the access token at the bottom, below the "Or copy and paste one of these URLs:" log message. Copy only the contents after the "token=" part and paste it to you Jupter server login field, or set up easy to remember password for yourself. After that, you are ready to use Jupyter Lab interface with Spark engine. 
 
 ## Other
 
