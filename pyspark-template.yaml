@@ -54,6 +54,11 @@ objects:
           io.kompose.service: pyspark
       spec:
         containers:
+          - args:
+              - start.sh
+              - jupyter
+              - lab
+              - --LabApp.token=12345
           - image: ' '
             name: pyspark
             ports:
