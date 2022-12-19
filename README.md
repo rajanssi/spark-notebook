@@ -15,7 +15,7 @@ After succesfull deployment, you can open Jupyter server frontend web page at
 
 `http://www.pyspark-route-<your-project-name>.2.rahtiapp.fi`.
 
-To get the access token to Jupyter server, you can first use the command `oc get pods` to find the right pod name and then type `oc logs -f <pod-name>`. You'll find the access token at the bottom, below the "Or copy and paste one of these URLs:" log message. Copy only the contents after the "token=" part and paste it to you Jupter server login field, or set up easy to remember password for yourself. After that, you are ready to use Jupyter Lab interface with Spark engine. 
+To get the access token to Jupyter server, go to your Jupyter server web page. The default token will be set to `12345`. You can change with the Setup Password field during your first log in.
 
 ## Other
 
